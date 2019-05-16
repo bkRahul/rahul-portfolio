@@ -10,19 +10,41 @@ $('#nav-menu').ready(function() {
 				// perform animated scrolling by getting top-position of target-element and set it as scroll target
 				$('html, body').stop().animate({
 						scrollTop: $(target).offset().top
-				}, 600, function() {
-						location.hash = target; //attach the hash (#jumptarget) to the pageurl
-				});
+				}, 500 );
 
 				return false;
 		});
 });
 
+
+$(window).scroll(function() {
+		var scrollDistance = $(window).scrollTop();
+
+				//height from top till div 
+				var divdist = $('#personal-projects').offset().top-250;
+
+				//total height of div
+				var divdistheight = $('#personal-projects').outerHeight(true);
+
+				// total height of div and scroll screen
+				var tot = divdist+divdistheight-250;
+
+				if (scrollDistance >= divdist && scrollDistance <= tot) {
+					console.log('white');
+					$('.nav-container li .dot-label').addClass('white');
+				}else {
+					$('.nav-container li .dot-label').removeClass('white');
+				}
+
+}).scroll();
+
+
+
 $(window).scroll(function() {
 		var scrollDistance = $(window).scrollTop();
 
 		//Show/hide menu on scroll
-		if (scrollDistance >= 500) {
+		if (scrollDistance >= 300) {
 				$('#nav-menu').addClass('active');
 		} else {
 				$('#nav-menu').removeClass('active');
@@ -51,3 +73,29 @@ $(document).on("click", ".accordion-section .menu div", function() {
 
 	}
 });
+
+//theme change
+
+const toggleSwitch = document.querySelector('.theme-switch #colorme');
+
+var count = 0;
+
+let colors = ['dark', 'light', 'one', 'two', 'three', 'four'];
+
+function switchTheme(e) {
+
+	e.preventDefault();
+
+   document.documentElement.setAttribute('data-theme', colors[count]);
+
+	count += 1;
+
+	//reset the counter
+	if (count>=colors.length) {
+		count=0;
+	}
+
+}
+
+
+toggleSwitch.addEventListener('click', switchTheme, false);

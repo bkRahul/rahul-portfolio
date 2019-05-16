@@ -1,44 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+	<!--[if IE]><![endif]-->
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>Rahul B Krishnappa | Web Developer</title>
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>	
+	<link rel="stylesheet" type="text/css" href="./css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="./assets/social/css/fontello.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
 </head>
 <body>
+<div class="theme-switch-wrapper">
+   <label class="theme-switch">
+   	<p id="colorme"><span class="icon-magic"></span><em>Color me!</em></a>
+  </label>
+
+</div>
 	<nav id="nav-menu">
 		<ul class="nav-container">
-			<li class="nav-item"><a href="#intro" class=""><span class="dot-label">intro</span><span class="dot"></span></a></li>
-			<li class="nav-item"><a href="#about" class=""><span class="dot-label">about</span><span class="dot"></span></a></li>
-			<li class="nav-item"><a href="#skills" class=""><span class="dot-label">skills</span><span class="dot"></span></a></li>
-			<li class="nav-item"><a href="#experience" class=""><span class="dot-label">experience</span><span class="dot"></span></a></li>
-			<li class="nav-item"><a href="#personal-projects" class=""><span class="dot-label">personal-projects</span><span class="dot"></span></a></li>
-			<li class="nav-item"><a href="#contact" class=""><span class="dot-label">contact</span><span class="dot"></span></a></li>
+			<li class="nav-item"><a href="#intro" ><span class="dot-label">intro</span><span class="dot"></span></a></li>
+			<li class="nav-item"><a href="#about" ><span class="dot-label">about</span><span class="dot"></span></a></li>
+			<li class="nav-item"><a href="#skills" ><span class="dot-label">skills</span><span class="dot"></span></a></li>
+			<li class="nav-item"><a href="#experience" ><span class="dot-label">experience</span><span class="dot"></span></a></li>
+			<li class="nav-item"><a href="#personal-projects" ><span class="dot-label">personal-projects</span><span class="dot"></span></a></li>
+			<li class="nav-item"><a href="#contact" ><span class="dot-label">contact</span><span class="dot"></span></a></li>
 		</ul>
 	</nav>
+	<aside id="mobile_menu">
+		<nav>
+			<ul class="mobile_menu__container">
+				<li class="mobile_menu-item"><a href="#intro" >intro</a></li>
+				<li class="mobile_menu-item"><a href="#about" >about</a></li>
+				<li class="mobile_menu-item"><a href="#skills" >skills</a></li>
+				<li class="mobile_menu-item"><a href="#experience" >experience</a></li>
+				<li class="mobile_menu-item"><a href="#personal-projects" >personal-projects</a></li>
+				<li class="mobile_menu-item"><a href="#contact" >contact</a></li>
+			</ul>
+		</nav>
+	</aside>	
 	<div id="body-container">
 		<section id="intro">
 			<div id="intro-section"  class="section">
 				<div id="intro-content">
 					<h1 class="heading" data-content="Rahul B K"><span class="name">Rahul B K</span></h1>
-					<div><p class="subtext"><a class="btn main-action">Web Developer</a> </p> </div>
+					<div><p class="subtext">Web Developer</p> </div>
 					<div class="social-icons">
-						<a href="">
-							<img height="40" width="40" src="./assets/social/mail.svg" />
-						</a>
-						<a href="">
-							<img height="40" width="40" src="./assets/social/linkedin.svg" />
-						</a>
-						<a href="">
-							<img height="40" width="40" src="./assets/social/github.svg" />
-						</a>
-						<a href="">
-							<img height="40" width="40" src="./assets/social/medium.svg" />
-						</a>
-						<a href="">
-							<img height="40" width="40" src="./assets/social/codepen.svg" />
-						</a>
+					  <a href="#" class="list-group-item" ><span class="icon-mail"></span></a>
+					  <a href="#" class="list-group-item" ><span class="icon-linkedin"></span></a>
+					  <a href="#" class="list-group-item" ><span class="icon-github"></span></a>
+					  <a href="#" class="list-group-item" ><span class="icon-medium"></span></a>
+					  <a href="#" class="list-group-item" ><span class="icon-codepen"></span></a>
 					</div>
 				</div>
 			</div>
@@ -47,6 +60,7 @@
 			<div id="about-section" class="section">
 				<div id="about-content" class="content-wrapper">
 					<h1 class="heading"><span class="name">Rahul B K</span></h1>
+					<span class="divider"></span>
 					<p class="subtext"><a class="btn main-action">Web Developer</a></p>
 				</div>
 			</div>			
@@ -54,37 +68,38 @@
 		<section id="skills">
 			<div id="skills-section" class="section">
 				<div id="skills-content" class="content-wrapper">
-					<h1 class="section-heading"><span class="name">Skills</span></h1>
+					<h1 class="heading"><span class="name">Skills</span></h1>
+					<span class="divider"></span>
 						<div class="skills-flex-wrapper">		
 					<div class="dev-section">
 						<h2 class="skills-heading"> <span class="sprite dev"></span> <span>Development</span> </h2>
 						<ul class="dev-container">
-							<li id="dev-item"><span>PHP</span></li>
-							<li id="dev-item"><span>JAVASCRIPT</span></li>
-							<li id="dev-item"><span>HTML5</span></li>
-							<li id="dev-item"><span>CSS3</span></li>
-							<li id="dev-item"><span>JQUERY</span></li>
-							<li id="dev-item"><span>JAVA</span></li>
-							<li id="dev-item"><span>MySql</span></li>
+							<li id="item1" class="dev-item"><span>PHP</span></li>
+							<li id="item2" class="dev-item"><span>JAVASCRIPT</span></li>
+							<li id="item3" class="dev-item"><span>HTML5</span></li>
+							<li id="item4" class="dev-item"><span>CSS3</span></li>
+							<li id="item5" class="dev-item"><span>JQUERY</span></li>
+							<li id="item6" class="dev-item"><span>JAVA</span></li>
+							<li id="item7" class="dev-item"><span>MySql</span></li>
 						</ul>
 					</div>
 					<div class="tools-section">
 						<h2 class="skills-heading"> <span class="sprite dev"></span> <span>Tools</span> </h2>
 						<ul class="tools-container">
-							<li id="tool-item"><span>Wordpress</span></li>
-							<li id="tool-item"><span>Git + Github</span></li>
-							<li id="tool-item"><span>Sass</span></li>
-							<li id="tool-item"><span>Gulp</span></li>
-							<li id="tool-item"><span>Postman</span></li>
+							<li id="item1" class="tool-item"><span>Wordpress</span></li>
+							<li id="item2" class="tool-item"><span>Git + Github</span></li>
+							<li id="item3" class="tool-item"><span>Sass</span></li>
+							<li id="item4" class="tool-item"><span>Gulp</span></li>
+							<li id="item5" class="tool-item"><span>Postman</span></li>
 						</ul>
 					</div>
 					<div class="frameworks-section">
 						<h2 class="skills-heading"> <span class="sprite dev"></span> <span>Frameworks</span> </h2>
 						<ul class="list">
-							<li id="tool-item"><img height="20" width="20" src="./assets/social/check.svg" /><span>Bootstrap</span></li>
-							<li id="tool-item"><img height="20" width="20" src="./assets/social/check.svg" /><span>Bulma</span></li>
-							<li id="tool-item"><img height="20" width="20" src="./assets/social/check.svg" /><span>Laravel</span></li>
-							<li id="tool-item"><img height="20" width="20" src="./assets/social/check.svg" /><span>React</span></li>
+							<li id="item1" class="tool-item"><span class="icon-check"></span><span>Bootstrap</span></li>
+							<li id="item2" class="tool-item"><span class="icon-check"></span><span>Bulma</span></li>
+							<li id="item3" class="tool-item"><span class="icon-check"></span><span>Laravel</span></li>
+							<li id="item4" class="tool-item"><span class="icon-check"></span><span>React</span></li>
 						</ul>
 					</div>
 				</div>
@@ -95,14 +110,11 @@
 			<div id="experience-section" class="section">
 				<div id="experience-content" class="content-wrapper">
 					<h1 class="heading"><span class="name">Experience</span></h1>
+					<span class="divider"></span>
 					<div  class="accordion-section">
 
-
-
-
     <div class="menu">
-     <div class="active"><span>Beer</span></div>
-     <div><span>Rorko Technologies</span></div>
+     <div class="active"><span>Rorko Technologies</span></div>
      <div><span>Mediacle</span></div>
     </div>
 
@@ -116,22 +128,10 @@
 <p>Created HTML email templates and newsletters for e-mail marketing campaigns. </p>
 <p>Hands-on experience with different frameworks like Bootstrap and jQuery and CMS tools like Wordpress. </p>
 <p>Created and implemented a custom CSS grid system, with CSS media queries for mobile responsiveness. </p>
-<p>Gained valuable experience working in many Real-time projects.</p></div></li>
-
-
-     <li>
-<h4>Web-Developer @ Rorko Technologies Private Limited </h4>
-<h4>		 ( July 2017 – Feb 2018 )  </h4>
- <div>
-<p>Gather and refine specifications and requirements based on technical needs. </p>
-<p>Created HTML email templates and newsletters for e-mail marketing campaigns. </p>
-<p>Hands-on experience with different frameworks like Bootstrap and jQuery and CMS tools like Wordpress. </p>
-<p>Created and implemented a custom CSS grid system, with CSS media queries for mobile responsiveness. </p>
 <p>Gained valuable experience working in many Real-time projects.</p>
-</div>
-     </li>
-     <li>
-  
+</div></li>
+
+<li>  
 <h4>Web-Developer @ Mediacle Technologies LLp </h4>
 <h4>		 ( Feb 2018 – Current )  </h4>
  <div>
@@ -153,8 +153,94 @@
 		<section id="personal-projects">
 			<div id="about-section" class="section">
 				<div id="about-content" class="content-wrapper">
-					<h1 class="heading" data-content="Rahul B K"><span class="name">Rahul B K</span></h1>
-					<div><p class="subtext"><a class="btn main-action">Web Developer</a> </p> </div>
+					<h1 class="heading" data-content="Rahul B K"><span class="name">Personal Projects</span></h1>
+					<span class="divider"></span>
+					<div class="grid-container">
+						<div id="item1" class="grid-item">
+							<div class="project-box">
+								<div>
+									<div class="projects__ProjectHeader">
+										<div class="projects__ProjectFolder"><span class="icon-folder"></span></div>
+										<div class="projects__ProjectLinks"></div>
+									</div>
+									<h5 class="projects__ProjectName">Google Keep Clone</h5><div class="projects__ProjectDescription"><p>A simple Google Keep clone built with Vue and Firebase.</p></div>									
+								</div>
+								<div>
+									<ul class="projects__TechList"><li>Vue</li><li>Firebase</li></ul>
+								</div>
+							</div>
+						</div>
+						<div id="item2" class="grid-item">
+							<div class="project-box">
+								<div>
+									<div class="projects__ProjectHeader">
+										<div class="projects__ProjectFolder"><span class="icon-folder"></span></div>
+										<div class="projects__ProjectLinks"></div>
+									</div>
+									<h5 class="projects__ProjectName">Google Keep Clone</h5><div class="projects__ProjectDescription"><p>Embeddable web player widget for Apple Music that lets users log in and listen to full song playback in the browser leveraging MusicKit.js. Read more about this project on 9to5Mac.</p></div>									
+								</div>
+								<div>
+									<ul class="projects__TechList"><li>Vue</li><li>Firebase</li></ul>
+								</div>
+							</div>							
+						</div>
+						<div id="item3" class="grid-item">
+							<div class="project-box">
+								<div>
+									<div class="projects__ProjectHeader">
+										<div class="projects__ProjectFolder"><span class="icon-folder"></span></div>
+										<div class="projects__ProjectLinks"></div>
+									</div>
+									<h5 class="projects__ProjectName">Google Keep Clone</h5><div class="projects__ProjectDescription"><p>A simple Google Keep clone built with Vue and Firebase.</p></div>									
+								</div>
+								<div>
+									<ul class="projects__TechList"><li>Vue</li><li>Firebase</li></ul>
+								</div>
+							</div>							
+						</div>
+						<div id="item4" class="grid-item">
+							<div class="project-box">
+								<div>
+									<div class="projects__ProjectHeader">
+										<div class="projects__ProjectFolder"><span class="icon-folder"></span></div>
+										<div class="projects__ProjectLinks"></div>
+									</div>
+									<h5 class="projects__ProjectName">Google Keep Clone</h5><div class="projects__ProjectDescription"><p>Web app that allows people to crowdsource a party's music queue. Allows people to request songs, upvote songs, rate songs, etc. so the DJ can see how the crowd is feeling and queue songs accordingly. Won Best UI/UX Design at Hackbeanpot 2017.</p></div>									
+								</div>
+								<div>
+									<ul class="projects__TechList"><li>Vue</li><li>Firebase</li></ul>
+								</div>
+							</div>							
+						</div>
+						<div id="item5" class="grid-item">
+							<div class="project-box">
+								<div>
+									<div class="projects__ProjectHeader">
+										<div class="projects__ProjectFolder"><span class="icon-folder"></span></div>
+										<div class="projects__ProjectLinks"></div>
+									</div>
+									<h5 class="projects__ProjectName">Google Keep Clone</h5><div class="projects__ProjectDescription"><p>A simple Google Keep clone built with Vue and Firebase.</p></div>									
+								</div>
+								<div>
+									<ul class="projects__TechList"><li>Vue</li><li>Firebase</li></ul>
+								</div>
+							</div>							
+						</div>
+						<div id="item6" class="grid-item">
+							<div class="project-box">
+								<div>
+									<div class="projects__ProjectHeader">
+										<div class="projects__ProjectFolder"><span class="icon-folder"></span></div>
+										<div class="projects__ProjectLinks"></div>
+									</div>
+									<h5 class="projects__ProjectName">Google Keep Clone</h5><div class="projects__ProjectDescription"><p>A simple Google Keep clone built with Vue and Firebase.</p></div>									
+								</div>
+								<div>
+									<ul class="projects__TechList"><li>Vue</li><li>Firebase</li></ul>
+								</div>
+							</div>							
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -162,6 +248,7 @@
 			<div id="contact-section" class="section">
 				<div id="contact-content" class="content-wrapper">
 					<h1 class="heading" data-content="Rahul B K"><span class="name">Get in touch</span></h1>
+					<span class="divider"></span>
 					<div class="form-section">
 						<form name="contact" method="POST" data-netlify="true">
 							<input type="name" name="Name" placeholder="Name" class="form-name" required>
@@ -175,7 +262,9 @@
 		</section>
 	</div>
 	<footer>
-		
+		<section id="footer">
+			<p>Designed & Built by Rahul B K</p>
+		</section>
 	</footer>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>	
 	<script type="text/javascript" src="./js/main.js"></script>
