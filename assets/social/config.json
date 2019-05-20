@@ -115,6 +115,12 @@
       "css": "down",
       "code": 59392,
       "src": "elusive"
+    },
+    {
+      "uid": "ff9a85aa20950dcc0615a2707a2b3f8e",
+      "css": "right",
+      "code": 59394,
+      "src": "entypo"
     }
   ]
 }

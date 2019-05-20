@@ -76,7 +76,7 @@ $(document).on("click", ".accordion-section .menu div", function() {
 
 //theme change
 
-const toggleSwitch = document.querySelector('.theme-switch #colorme');
+const toggleSwitch = document.getElementsByClassName('colorme');
 
 var count = 0;
 
@@ -94,8 +94,42 @@ function switchTheme(e) {
 	if (count>=colors.length) {
 		count=0;
 	}
-
+console.log('clicked');
 }
 
+for (i = 0; i < toggleSwitch.length; i++) {
+	toggleSwitch[i].addEventListener('click', switchTheme, false);
+}
 
-toggleSwitch.addEventListener('click', switchTheme, false);
+//Hamburger menu
+
+$(document).ready(function(){
+
+	revealSections();
+
+	$('#burger-menu').click(function(){
+		$(this).toggleClass('open');
+		$('.mobile_menu').toggleClass('menu_activated');
+		$('body').toggleClass( 'no-scroll' );	
+	});
+
+	$('.menu__group a').click(function(){
+		$('#burger-menu').toggleClass('open');
+		$('.mobile_menu').toggleClass('menu_activated');
+		$('body').toggleClass( 'no-scroll' );			
+	});
+
+
+function revealSections() {
+
+	var posts = $('section:not(.reveal)');
+	var i = 0;
+	setInterval(function() {
+		if( i >= posts.length) return false;
+		var el = posts[i];
+		$(el).addClass('reveal');
+		i++;
+	}, 500);
+}
+
+});

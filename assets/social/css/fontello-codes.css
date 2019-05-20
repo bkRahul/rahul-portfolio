@@ -1,6 +1,7 @@
 
 .icon-down:before { content: '\e800'; } /* '' */
 .icon-github:before { content: '\e801'; } /* '' */
+.icon-right:before { content: '\e802'; } /* '' */
 .icon-linkedin:before { content: '\e803'; } /* '' */
 .icon-mail:before { content: '\e804'; } /* '' */
 .icon-medium:before { content: '\e805'; } /* '' */
