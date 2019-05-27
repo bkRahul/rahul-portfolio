@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <!--[if IE]><![endif]-->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Rahul B Krishnappa | Web Developer</title>
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <link rel="stylesheet" type="text/css" href="./css/fonts.css">
-    <link rel="stylesheet" type="text/css" href="./assets/social/css/fontello.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140682612-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-140682612-1');
+</script>
 </head>
 
 <body>
@@ -59,7 +63,7 @@
             <div class="resume-wrapper">
                 <svg height="50" width="120" xmlns="http://www.w3.org/2000/svg">
                     <rect class="shape" height="50" width="120" />
-                    <p class="text"><a href="">Resume</a></p>
+                    <p class="resume-text"><a href="">Resume</a></p>
                 </svg>
             </div>
         </section>
@@ -79,18 +83,19 @@
             <div id="intro-section" class="section">
                 <div id="intro-content">
                     <h1 class="heading fadeInDown">Rahul B K</h1>
+                    <span class="divider"></span>
                     <div>
                         <p class="subtext fadeInUp">Self-taught, highly motivated developer with a focus on everything web, passionate about developing quality products, solving interesting problems & learning new technologies.</p>
                     </div>
                     <div class="social-icons">
-                        <a href="#" class="list-group-item"><span class="icon-mail"></span></a>
-                        <a href="#" class="list-group-item"><span class="icon-linkedin"></span></a>
-                        <a href="#" class="list-group-item"><span class="icon-github"></span></a>
-                        <a href="#" class="list-group-item"><span class="icon-medium"></span></a>
-                        <a href="#" class="list-group-item"><span class="icon-codepen"></span></a>
+                        <a href="mailto:rahulkrishnappa94@gmail.com" rel="nofollow noopener noreferrer" target="_blank" class="list-group-item"><span class="icon-mail"></span></a>
+                        <a href="https://www.linkedin.com/in/rahul-krishnappa/" rel="nofollow noopener noreferrer" target="_blank" class="list-group-item"><span class="icon-linkedin"></span></a>
+                        <a href="https://github.com/bkRahul" rel="nofollow noopener noreferrer" target="_blank" class="list-group-item"><span class="icon-github"></span></a>
+                        <a href="https://medium.com/@rahulkrishnappa" rel="nofollow noopener noreferrer" target="_blank" class="list-group-item"><span class="icon-medium"></span></a>
+                        <a href="https://codepen.io/Rahul_bk/" rel="nofollow noopener noreferrer" target="_blank" class="list-group-item"><span class="icon-codepen"></span></a>
                     </div>
                 </div>
-                    <div class="arrow"><a href="#about"><span class="icon-down"></span></a></div>	                
+                <div class="arrow"><a href="#about"><span class="icon-down"></span></a></div>
             </div>
         </section>
         <section id="about">
@@ -104,12 +109,11 @@
                     <p></p>
                     <p>Here's a few technologies I've been working with recently:</p>
                     <ul>
-                    	<li><span class="icon-right"></span>Laravel</li>
-                    	<li><span class="icon-right"></span>Vue</li>
-                    	<li><span class="icon-right"></span>Bulma</li>
-                    	<li><span class="icon-right"></span>SASS</li>
+                        <li><span class="icon-right"></span>Laravel</li>
+                        <li><span class="icon-right"></span>Vue</li>
+                        <li><span class="icon-right"></span>Bulma</li>
+                        <li><span class="icon-right"></span>SASS</li>
                     </ul>
-
                 </div>
             </div>
         </section>
@@ -197,9 +201,9 @@
             </div>
         </section>
         <section id="personal-projects">
-            <div id="about-section" class="section">
-                <div id="about-content" class="content-wrapper">
-                    <h1 class="heading" data-content="Rahul B K"><span class="name">Personal Projects</span></h1>
+            <div id="projects-section" class="section">
+                <div id="projects-content" class="content-wrapper">
+                    <h1 class="heading" ><span class="name">Personal Projects</span></h1>
                     <span class="divider"></span>
                     <div class="grid-container">
                         <div id="item1" class="grid-item">
@@ -207,17 +211,17 @@
                                 <div>
                                     <div class="projects__ProjectHeader">
                                         <div class="projects__ProjectFolder"><span class="icon-folder"></span></div>
-                                        <div class="projects__ProjectLinks"></div>
+                                        <div class="projects__ProjectLinks"><a href="https://github.com/bkRahul/laravel-instaclone" rel="nofollow noopener noreferrer" target="_blank"><span class="icon-github-link"></span></a></div>
                                     </div>
-                                    <h5 class="projects__ProjectName">Google Keep Clone</h5>
+                                    <h5 class="projects__ProjectName">Instagram Clone</h5>
                                     <div class="projects__ProjectDescription">
-                                        <p>A simple Google Keep clone built with Vue and Firebase.</p>
+                                        <p>A simple Instagram clone built with laravel and vue</p>
                                     </div>
                                 </div>
                                 <div>
                                     <ul class="projects__TechList">
+                                        <li>Laravel</li>
                                         <li>Vue</li>
-                                        <li>Firebase</li>
                                     </ul>
                                 </div>
                             </div>
@@ -227,17 +231,17 @@
                                 <div>
                                     <div class="projects__ProjectHeader">
                                         <div class="projects__ProjectFolder"><span class="icon-folder"></span></div>
-                                        <div class="projects__ProjectLinks"></div>
+                                        <div class="projects__ProjectLinks"><a href="https://sdcomputech.com/" rel="nofollow noopener noreferrer" target="_blank"><span class="icon-link"></span></a></div>
                                     </div>
-                                    <h5 class="projects__ProjectName">Google Keep Clone</h5>
+                                    <h5 class="projects__ProjectName">SdComputech</h5>
                                     <div class="projects__ProjectDescription">
-                                        <p>Embeddable web player widget for Apple Music that lets users log in and listen to full song playback in the browser leveraging MusicKit.js. Read more about this project on 9to5Mac.</p>
+                                        <p>Wordpress site built with Visual Composer making use of custom widgets and custom posts type. Integrated a built in Contact form with shortcode and ajax submission</p>
                                     </div>
                                 </div>
                                 <div>
                                     <ul class="projects__TechList">
-                                        <li>Vue</li>
-                                        <li>Firebase</li>
+                                        <li>Wordpress</li>
+                                        <li>Visual Composer</li>
                                     </ul>
                                 </div>
                             </div>
@@ -247,37 +251,39 @@
                                 <div>
                                     <div class="projects__ProjectHeader">
                                         <div class="projects__ProjectFolder"><span class="icon-folder"></span></div>
-                                        <div class="projects__ProjectLinks"></div>
+                                        <div class="projects__ProjectLinks"><a href="https://github.com/bkRahul/premiumThemeWp" rel="nofollow noopener noreferrer" target="_blank"><span class="icon-github-link"></span></a></div>
                                     </div>
-                                    <h5 class="projects__ProjectName">Google Keep Clone</h5>
+                                    <h5 class="projects__ProjectName">Premium Theme Wp</h5>
                                     <div class="projects__ProjectDescription">
-                                        <p>A simple Google Keep clone built with Vue and Firebase.</p>
+                                        <p>A Custom Theme built from scratch making use of Settings Api to manage theme functions like custom posts, users personal information.
+                                        Used Ajax load more posts feature and built a Popular Posts Custom Widget to display most viewed posts</p>
                                     </div>
                                 </div>
                                 <div>
                                     <ul class="projects__TechList">
-                                        <li>Vue</li>
-                                        <li>Firebase</li>
+                                        <li>Wordpress</li>
+                                        <li>Ajax</li>
+                                        <li>Settings API</li>
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div> 
                         <div id="item4" class="grid-item">
                             <div class="project-box">
                                 <div>
                                     <div class="projects__ProjectHeader">
                                         <div class="projects__ProjectFolder"><span class="icon-folder"></span></div>
-                                        <div class="projects__ProjectLinks"></div>
+                                        <div class="projects__ProjectLinks"><a href="https://github.com/bkRahul/Custom-post-wp-plugin" rel="nofollow noopener noreferrer" target="_blank"><span class="icon-github-link"></span></a></div>
                                     </div>
-                                    <h5 class="projects__ProjectName">Google Keep Clone</h5>
+                                    <h5 class="projects__ProjectName">Add Custom Post Plugin</h5>
                                     <div class="projects__ProjectDescription">
-                                        <p>Web app that allows people to crowdsource a party's music queue. Allows people to request songs, upvote songs, rate songs, etc. so the DJ can see how the crowd is feeling and queue songs accordingly. Won Best UI/UX Design at Hackbeanpot 2017.</p>
+                                        <p>A Wordpress plugin to create a custom post type with custom taxanomy feature</p>
                                     </div>
                                 </div>
                                 <div>
                                     <ul class="projects__TechList">
-                                        <li>Vue</li>
-                                        <li>Firebase</li>
+                                        <li>Wordpress</li>
+                                        <li>Php</li>
                                     </ul>
                                 </div>
                             </div>
@@ -287,17 +293,17 @@
                                 <div>
                                     <div class="projects__ProjectHeader">
                                         <div class="projects__ProjectFolder"><span class="icon-folder"></span></div>
-                                        <div class="projects__ProjectLinks"></div>
+                                        <div class="projects__ProjectLinks"><a href="https://github.com/bkRahul/laravel-instaclone" rel="nofollow noopener noreferrer" target="_blank"><span class="icon-github-link"></span></a><a href="loo" rel="nofollow noopener noreferrer" target="_blank"><span class="icon-link"></span></a></div>
                                     </div>
-                                    <h5 class="projects__ProjectName">Google Keep Clone</h5>
+                                    <h5 class="projects__ProjectName">Instagram Clone</h5>
                                     <div class="projects__ProjectDescription">
-                                        <p>A simple Google Keep clone built with Vue and Firebase.</p>
+                                        <p>A simple Instagram clone built with laravel and vue</p>
                                     </div>
                                 </div>
                                 <div>
                                     <ul class="projects__TechList">
+                                        <li>Laravel</li>
                                         <li>Vue</li>
-                                        <li>Firebase</li>
                                     </ul>
                                 </div>
                             </div>
@@ -307,22 +313,31 @@
                                 <div>
                                     <div class="projects__ProjectHeader">
                                         <div class="projects__ProjectFolder"><span class="icon-folder"></span></div>
-                                        <div class="projects__ProjectLinks"></div>
+                                        <div class="projects__ProjectLinks"><a href="https://github.com/bkRahul/ghibli_api" rel="nofollow noopener noreferrer" target="_blank"><span class="icon-github-link"></span></a><a href="https://movies-ghibli.herokuapp.com/" rel="nofollow noopener noreferrer" target="_blank"><span class="icon-link"></span></a></div>
                                     </div>
-                                    <h5 class="projects__ProjectName">Google Keep Clone</h5>
+                                    <h5 class="projects__ProjectName">Ghibli Studio API</h5>
                                     <div class="projects__ProjectDescription">
-                                        <p>A simple Google Keep clone built with Vue and Firebase.</p>
+                                        <p>A app that displays movie title and summary fetched from public ghibli studio api
+Built with css flexbox and Deployed on heroku</p>
                                     </div>
                                 </div>
                                 <div>
                                     <ul class="projects__TechList">
-                                        <li>Vue</li>
-                                        <li>Firebase</li>
+                                        <li>javascript</li>
+                                        <li>Heroku</li>
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div>    
                     </div>
+                    <div id="show-projects">
+
+
+                <svg height="60" width="150" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="shape" height="60" width="150"></rect>
+                    </svg><p class="projects-link"><a href="https://github.com/bkRahul?tab=repositories" rel="nofollow noopener noreferrer" target="_blank">More Projects</a></p>
+                
+            </div>            
                 </div>
             </div>
         </section>
@@ -348,7 +363,6 @@
             <p>Designed & Built by Rahul B K</p>
         </section>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
 </body>
 

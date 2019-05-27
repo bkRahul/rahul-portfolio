@@ -1,7 +1,13 @@
+import '../css/main.scss';
+
+import $ from 'jquery';
+
+$(document).ready(function(){
+
 // nav menu script
 
 $('#nav-menu').ready(function() {
-		$('a[href*=#]').bind('click', function(e) {
+		$('a[href*="#"]').bind('click', function(e) {
 
 				e.preventDefault(); // prevent hard jump, the default behavior
 
@@ -31,6 +37,7 @@ $(window).scroll(function() {
 
 				if (scrollDistance >= divdist && scrollDistance <= tot) {
 					console.log('white');
+						revealSections();
 					$('.nav-container li .dot-label').addClass('white');
 				}else {
 					$('.nav-container li .dot-label').removeClass('white');
@@ -40,7 +47,20 @@ $(window).scroll(function() {
 
 
 
-$(window).scroll(function() {
+$(window).scroll(function(event) {
+
+var divider = $(".divider");
+  divider.each(function(i, el) {
+    var el = $(el);
+    if (isVisible(el)) {
+      el.addClass("line"); 
+      console.log('line added');
+    }else{
+    	 el.removeClass("line"); 
+    }
+		});
+
+
 		var scrollDistance = $(window).scrollTop();
 
 		//Show/hide menu on scroll
@@ -60,7 +80,8 @@ $(window).scroll(function() {
 }).scroll();
 
 
-// Acc
+// Accordion
+
 $(document).on("click", ".accordion-section .menu div", function() {
 	var numberIndex = $(this).index();
 
@@ -87,7 +108,7 @@ function switchTheme(e) {
 	e.preventDefault();
 
    document.documentElement.setAttribute('data-theme', colors[count]);
-
+    localStorage.setItem('theme', colors[count]); //add this to storage
 	count += 1;
 
 	//reset the counter
@@ -97,15 +118,21 @@ function switchTheme(e) {
 console.log('clicked');
 }
 
-for (i = 0; i < toggleSwitch.length; i++) {
+for (var i = 0; i < toggleSwitch.length; i++) {
 	toggleSwitch[i].addEventListener('click', switchTheme, false);
 }
 
+//save to local storage
+
+
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+}
+
+
 //Hamburger menu
-
-$(document).ready(function(){
-
-	revealSections();
 
 	$('#burger-menu').click(function(){
 		$(this).toggleClass('open');
@@ -116,20 +143,52 @@ $(document).ready(function(){
 	$('.menu__group a').click(function(){
 		$('#burger-menu').toggleClass('open');
 		$('.mobile_menu').toggleClass('menu_activated');
-		$('body').toggleClass( 'no-scroll' );			
+		$('body').toggleClass( 'no-scroll' );	
+
 	});
 
-
+//reveal function
 function revealSections() {
 
-	var posts = $('section:not(.reveal)');
+	var posts = $('.grid-item:not(.reveal)');
 	var i = 0;
 	setInterval(function() {
 		if( i >= posts.length) return false;
 		var el = posts[i];
 		$(el).addClass('reveal');
 		i++;
-	}, 500);
+	}, 300);
 }
+
+function isVisible(element){
+	var scroll_pos = $(window).scrollTop();
+	var window_height = $(window).height();
+	var el_top = $(element).offset().top;
+	var el_height = $(element).height();
+	var el_bottom = el_top + el_height;
+	return ( (el_bottom-el_height*0.25 > scroll_pos ) && ( el_top < ( scroll_pos+0.5*window_height ) ) );
+}
+
+//fixed navbar
+   var c, currentScrollTop = 0,
+       navbar = $('.mobile_menu');
+
+   $(window).scroll(function () {
+      var a = $(window).scrollTop();
+      var b = navbar.height();
+     
+      currentScrollTop = a;
+     
+      if (c < currentScrollTop && a > b + b) {
+        navbar.addClass("scrollUp");
+        console.log('class added');
+
+      } else if (c > currentScrollTop && !(a <= b)) {
+        navbar.removeClass("scrollUp");
+        console.log('class removed');
+      }
+      c = currentScrollTop;
+  });
+
 
 });
