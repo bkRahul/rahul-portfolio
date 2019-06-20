@@ -164,6 +164,9 @@
 }
 
 #body-container .grid-item {
+
+    color: var(--secondary-color, #fff);
+  background-color: var(--primary-color, #000);
   &.reveal {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -459,17 +462,7 @@ h2, h5 {
   }
 }
 
-.icon-github-link, .icon-folder {
-  font-size: 2.2em;
-}
 
-.projects__ProjectLinks a {
-  margin: 0 10px;
-}
-
-.icon-link {
-  font-size: 1.9em;
-}
 
 .heading {
   font-size: 3em;
@@ -611,13 +604,14 @@ h2, h5 {
   position: relative;
   vertical-align: middle;
   font-weight: 700;
-  transition: 400ms all ease-in;
+  transition: 300ms all ease-in;
   &:hover {
-    background-color: var(--primary-color, #000);
-    color: var(--secondary-color, #fff);
+    border-left: 3px solid var(--primary-color, #000);
   }
   &.active {
-    border-left: 2px solid var(--primary-color, #000);
+
+        background-color: var(--primary-color, #000);
+    color: var(--secondary-color, #fff);
   }
 }
 
@@ -684,8 +678,7 @@ ul.nacc {
   align-items: flex-start;
   position: relative;
   height: 100%;
-  color: var(--secondary-color, #fff);
-  background-color: var(--primary-color, #000);
+      min-height: 375px;
   padding: 25px;
   border-radius: 2px;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
@@ -696,14 +689,40 @@ ul.nacc {
   -webkit-box-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
-  align-items: flex-end;
-  margin-bottom: 30px;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.projects__ProjectFolder {
+
+.icon-folder {
+  font-size: 2.2em;
+}
+}
+.projects__ProjectLinks {
+
+
+  a {
+  margin: 0 10px;
+  .icon-github-link {
+  font-size: 1.6em;
+}
+
+.icon-link {
+  font-size: 1.4em;
+}
+
+  }
 }
 
 .projects__ProjectName {
   font-size: 22px;
   color: var(--secondary-color, #fff);
   margin: 0px 0px 10px;
+}
+
+.projects__ProjectDescription {
+  font-size: 0.9em; 
 }
 
 .projects__TechList {
@@ -717,7 +736,7 @@ ul.nacc {
     font-family: 'Fira Code' !important;
     font-size: 0.8em;
     word-spacing: -0.2em;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
     line-height: 2;
     &:after {
       content: "|";
@@ -809,7 +828,7 @@ footer #footer {
   font-weight: bold;
   padding: 30px;
   text-align: center;
-  background: linear-gradient(85deg, var(--primary-color, #fff), var(--secondary-color, #000));
+  background: var(--primary-color, #fff);
   color: var(--secondary-color, #000);
 }
 
@@ -1045,7 +1064,7 @@ footer #footer {
   /*Experience Section*/
   .accordion-section {
     flex-direction: column;
-    min-height: 650px;
+    min-height:680px;
     margin: 0;
     .menu {
       width: 100%;
