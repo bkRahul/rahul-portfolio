@@ -490,8 +490,6 @@ h2, h5 {
 .skills-flex-wrapper {
   display: flex;
   height: 30em;
-  flex-flow: column wrap;
-  width: 100%;
   ul {
     margin-top: 25px;
   }
@@ -503,15 +501,26 @@ h2, h5 {
 }
 
 .dev-section {
-  width: 50%;
   max-width: 450px;
   padding: 20px;
 }
 
 .frameworks-section, .tools-section {
-  width: 50%;
   padding: 20px;
   min-height: 200px;
+}
+
+.tools-section {
+  .tools-container {
+    margin-left: 30px;
+    display: flex;
+    ul {
+      list-style-type: none;
+    }
+    ul:nth-child(2) {
+      margin-left: 5rem;
+    }    
+  }
 }
 
 .dev-container {
@@ -530,7 +539,7 @@ h2, h5 {
   display: block;
 }
 
-.tools-container li {
+.list li {
   font-weight: bold;
   padding: 5px 20px;
   margin: 10px;
@@ -634,6 +643,9 @@ ul.nacc {
       z-index: 2;
       opacity: 1;
       transform: translateX(0px);
+    }
+    p a {
+      color: #00b7c7;
     }
   }
 }
@@ -1054,6 +1066,12 @@ footer #footer {
   }
   .skills-flex-wrapper {
     height: auto;
+    flex-flow: column wrap;
+  }
+  .tools-section {
+    .tools-container {
+      margin-left: 0;
+    }
   }
   .dev-section, .tools-section, .tools-container, input, textarea {
     width: 100%;
