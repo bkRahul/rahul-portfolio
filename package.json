@@ -1,12 +1,11 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Rahul Krishnappa Portfolio",
-  "main": "index.js",
+  "description": "Rahul BK Portfolio",
+  "source": "src/index.html",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build",
-    "resume": "parcel resume/resume.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
@@ -17,7 +16,7 @@
     "frontend"
   ],
   "browserslist": "> 0.5%, last 2 versions, not dead",
-  "author": "",
+  "author": "rahul",
   "license": "ISC",
   "dependencies": {
     "jquery": "^3.5.1"
