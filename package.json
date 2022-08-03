@@ -1,12 +1,13 @@
 {
-  "name": "portfolio",
+  "name": "rahul-portfolio",
   "version": "1.0.0",
   "description": "Rahul BK Portfolio",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel src/index.html -p 3000 --open",
+    "build:parcel": "parcel build ./src/index.html --public-url ./ --no-source-maps",
+    "build": "npm run clean && npm run build:parcel",
+    "clean": "rm -rf dist/*"
   },
   "type": "module",
   "keywords": [
@@ -22,7 +23,9 @@
     "jquery": "^3.5.1"
   },
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.6.2",
     "@parcel/transformer-sass": "^2.6.2",
+    "@parcel/transformer-webmanifest": "^2.6.2",
     "cssnano": "^4.1.10",
     "parcel": "^2.6.2",
     "sass": "^1.26.10"
