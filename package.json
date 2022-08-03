@@ -1,23 +1,31 @@
 {
-  "name": "Portfolio",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "Rahul Krishnappa Portfolio",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel index.html",
-    "resume": "parcel resume/resume.html", 
+    "start": "parcel index.html",
+    "build": "parcel build",
+    "resume": "parcel resume/resume.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "type": "module",
+  "keywords": [
+    "resume",
+    "web developer",
+    "react",
+    "frontend"
+  ],
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "autoprefixer": "^9.8.6",
-    "jquery": "^3.5.1",
-    "postcss-modules": "^1.5.0"
+    "jquery": "^3.5.1"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.2",
     "cssnano": "^4.1.10",
+    "parcel": "^2.6.2",
     "sass": "^1.26.10"
   },
   "repository": {
